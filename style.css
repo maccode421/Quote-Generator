@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJfjLP8c7NLsWQnU1-OzSM-Om2PZ6yPbnKWvfulNAd1taQCzn");
+}
+
+.container {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.quote-box {
+    border-color: white;
+}
