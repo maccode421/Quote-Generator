@@ -24,16 +24,18 @@ $(document).ready(function() {
         console.log(randomQuote);
 
         // Using the Twitter API
-        var quoteLink = 'https://twitter.com/intent/tweet?text=' + randomQuote;
-        $(".share-quote").on('click', function() {
-            console.log(quoteLink);
+        // var quoteLink = 'https://twitter.com/intent/tweet?text=' + randomQuote;
+        $("#share-quote").on('click', function(event) {
+            window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(randomQuote));
+            console.log("it works 2");
         });
 
     }
 
-    $(".get-quote").on('click', function(event) {
+    $("#get-quote").on('click', function(event) {
+        event.preventDefault();
         getQuote();
-        console.log();
+        console.log("it works");
     });
 
 });
