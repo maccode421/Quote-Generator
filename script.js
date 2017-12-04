@@ -22,15 +22,29 @@ $(document).ready(function() {
         var randomQuote = yodaQuotes[Math.floor(Math.random() * yodaQuotes.length)];
         $("#quote").html(randomQuote);
 
-        // Using the Twitter API
+        // share to Twitter 
         $("#share-quote").on('click', function(event) {
-            event.preventDefault();
+            // event.preventDefault();
             window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(randomQuote));
         });
     }
-
+    getQuote();
     $("#get-quote").on('click', function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         getQuote();
     });
 });
+
+// Facebook Plugin
+(function(d, s, id) {
+        var js,
+        fjs = d.getElementsByTagName(s)[0];
+        
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
