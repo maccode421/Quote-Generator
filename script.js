@@ -22,7 +22,7 @@ $(document).ready(function() {
         var randomQuote = yodaQuotes[Math.floor(Math.random() * yodaQuotes.length)];
         $("#quote").html(randomQuote);
 
-        // share to Twitter 
+        // Share to Twitter 
         $("#share-quote").on('click', function(event) {
             // event.preventDefault();
             window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(randomQuote));
