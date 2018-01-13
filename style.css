@@ -1,34 +1,35 @@
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJfjLP8c7NLsWQnU1-OzSM-Om2PZ6yPbnKWvfulNAd1taQCzn");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJfjLP8c7NLsWQnU1-OzSM-Om2PZ6yPbnKWvfulNAd1taQCzn");
 }
 
-h1, h4 {
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 1px 1px #fff;
+h1,
+h4 {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 1px 1px #fff;
 }
 
 p {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    margin: 0;
-    text-shadow: 1px 1px #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  text-shadow: 1px 1px #fff;
 }
 
 .container {
-    text-align: center;
-    padding-top: 15vh;
+  text-align: center;
+  padding-top: 15vh;
 }
 
 hr {
-    border-bottom: 1px solid #333;
-    text-shadow: 1px 1px #fff;
+  border-bottom: 1px solid #333;
+  text-shadow: 1px 1px #fff;
 }
 
 .quote-box {
-    /*border: 1px dotted #333;*/
-    /*border-radius: 7vh;*/
-    box-sizing: content-box;
-    height: 54px;
-    margin-bottom: 7vh;
-    padding: 7vh;
+  /* border: 1px dotted #333;
+  border-radius: 7vh; */
+  box-sizing: content-box;
+  height: 54px;
+  margin-bottom: 7vh;
+  padding: 7vh;
 }
